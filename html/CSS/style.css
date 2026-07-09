@@ -232,6 +232,47 @@ nav{
 
 }
 
+
+.double-image-parent{
+    width: 100%;
+    padding: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.double-image-child{
+    width: 48%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.double-image-child img{
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    display: block;
+}
+
+
+@media (max-width:768px){
+
+    .double-image-parent{
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .double-image-child{
+        width: 100%;
+    }
+
+    .double-image-child img{
+        height: 300px;
+    }
+
+}
+
 #heading-1{
   margin-top: 50px;
   font-size: 30px;
